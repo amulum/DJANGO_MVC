@@ -1,0 +1,70 @@
+{% extends 'basic_view/base.html' %}
+{% block content %}
+{%load static%}
+<div class="wrap-mentor--content">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <!-- our mentor -->
+            <div class="our-mentor"> Our Mentor</div>
+        </div>
+        <!-- content loop -->
+        <div class="row d-flex justify-content-center margin__10">
+            <div class="col-3">
+                <!-- image -->
+                <img src="{%static 'img/mentor/andreas.png'%}" alt="">
+            </div>
+            <div class="col-1">
+                <!-- none -->
+            </div>
+            <div class="col-6">
+                <!-- profile -->
+                <div class="wrap-mentor-name_exp d-flex flex-column">
+                    <div class="mentor-name">Andreas Nugroho</div>
+                    <div class="mentor-exp">Software Ninja (5 years experience)</div>
+                </div>
+                <div class="mentor-quote">
+                    "Great place to learn about programming. Come join us!"
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center margin__10">
+            <div class="col-3">
+                <!-- image -->
+                <img src="{%static 'img/mentor/ramdhan.png'%}" alt="">
+            </div>
+            <div class="col-1">
+                <!-- none -->
+            </div>
+            <div class="col-6">
+                <!-- profile -->
+                <div class="wrap-mentor-name_exp d-flex flex-column">
+                    <div class="mentor-name">Ramdhan Hidayat</div>
+                    <div class="mentor-exp">Master of Chaos (10 years experience)</div>
+                </div>
+                <div class="mentor-quote">
+                    "We make this program with passion, hard rock with us"
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center margin__10">
+            <div class="col-3">
+                <!-- image -->
+                <img src="{%static 'img/mentor/trimo.png'%}" alt="">
+            </div>
+            <div class="col-1">
+                <!-- none -->
+            </div>
+            <div class="col-6">
+                <!-- profile -->
+                <div class="wrap-mentor-name_exp d-flex flex-column">
+                    <div class="mentor-name">Trimo Leksono</div>
+                    <div class="mentor-exp">Magician(8 years experience)</div>
+                </div>
+                <div class="mentor-quote">
+                    "The best place for who want to be great"
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

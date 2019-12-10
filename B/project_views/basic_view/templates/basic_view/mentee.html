@@ -1,0 +1,58 @@
+{% extends 'basic_view/base.html' %}
+
+{% block content %}
+{%load static%}
+<div class="wrap-mentor--content">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-10">
+                <div class="row d-flex justify-content-center">
+                    <div class="our-mentee">Our Mentee</div>
+                </div>     
+            </div>
+                <!-- content loop -->
+            <div class="row d-flex justify-content-center wrap-mentor--box">
+                <div class="col-4">
+                    <div class="mentee-img">
+                        <img src="{%static 'img/mentee/jobs.png'%}" alt="">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="wrap-mentee-text">
+                        <div class="mentee-name">Steve Jobs</div>
+                        <div class="mentee-quote">" I learn so much from Alpha Tech "</div>
+                    </div>
+                </div>
+            </div>
+            <!-- content loop -->
+            <div class="row d-flex justify-content-center wrap-mentor--box">
+                <div class="col-4">
+                    <div class="mentee-img">
+                        <img src="{%static 'img/mentee/page.png'%}" alt="">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="wrap-mentee-text">
+                        <div class="mentee-name">Lary Page</div>
+                        <div class="mentee-quote">" Great place to learn about programming. "</div>
+                    </div>
+                </div>
+            </div>
+            <!-- content loop -->
+            <div class="row d-flex justify-content-center wrap-mentor--box">
+                <div class="col-4">
+                    <div class="mentee-img">
+                        <img src="{%static 'img/mentee/mark.png'%}" alt="">
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="wrap-mentee-text">
+                        <div class="mentee-name">Mark Zuckenberg</div>
+                        <div class="mentee-quote">" The best place for who want to be a great IT talent "</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{%extends 'basic_view/base.html'%}
+
+{%block input_form%}
+<li> 
+    <a href="{%url 'basic_view:home'%}">Home</a>
+</li>
+{%endblock%}
+<!-- blank -->
+{%block blank_block%}
+{%endblock%}
+
+{%block content%}
+<div class="wrap-input_blog">
+    <form action="update" method="POST">
+        {% csrf_token %}
+        <label for="image_path">Image Path</label>
+        <input type="text" placeholder="image_path" name="image_path" id="image_path">
+
+        <label for="header">Header</label>
+        <input type="text" placeholder="header" name="header" id="header">
+        
+        <label for="content">Content</label>
+        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+
+        <label for="date">Date</label>
+        <input type="text" placeholder="Date" name="date" id="date">
+
+        <label for="comment">Comment</label>
+        <input type="text" placeholder="comment" name="comment" id="comment">
+
+        <input type="submit" value="Submit New Content">
+        
+    </form>
+</div>
+{%endblock%}
