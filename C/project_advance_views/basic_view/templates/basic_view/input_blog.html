@@ -13,23 +13,31 @@
 <div class="wrap-input_blog">
     <form action="update" method="POST">
         {% csrf_token %}
-        <label for="image_path">Image Path</label>
-        <input type="text" placeholder="image_path" name="image_path" id="image_path">
-
-        <label for="header">Header</label>
-        <input type="text" placeholder="header" name="header" id="header">
+        <div class="form-group">
+            <label for="image_path">Image Path</label>
+            <input class="form-control" type="text" placeholder="image_path" name="image_path" id="image_path">        
+        </div>
+        <div class="form-group">
+            <label for="header">Header</label>
+            <input type="text" class="form-control" placeholder="header" name="header" id="header">        
+        </div>
         
-        <label for="content">Content</label>
-        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        <div class="form-group">
+            <label for="content">Content</label>
+            <textarea name="content" class="form-control" id="content" cols="30" rows="10"></textarea>        
+        </div>
 
-        <label for="date">Date</label>
-        <input type="text" placeholder="Date" name="date" id="date">
+        <div class="form-group">
+            <label for="date">Date</label>
+            <input type="text" class="form-control" placeholder="Date" name="date" id="date">        
+        </div>
 
-        <label for="comment">Comment</label>
-        <input type="text" placeholder="comment" name="comment" id="comment">
-
-        <input type="submit" value="Submit New Content">
-        
+        <div class="form-group">
+            <label for="comment">Comment</label>
+            <input type="text" class="form-control" placeholder="comment" name="comment" id="comment">        
+        </div>
+        <!-- <input type="submit" value="Submit New Content"> -->
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
 {%endblock%}

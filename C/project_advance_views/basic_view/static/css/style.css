@@ -159,9 +159,15 @@
 .wrap-summary {
     margin: 10px 0;
 }
-.wrap-address pre{
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-size: large;
+
+.wrap-address {
+    margin: 10px 0;
+}
+
+.wrap-address table tr td{
+    padding: 5px;
+    border: none;
+    
 }
 
 /*---------------------------- EOF author ----------------------------*/
@@ -193,10 +199,7 @@
     margin: 10px 0 30px 0;
 }
 
-.submit-content {
-    ;
-    
-}
+
 /*---------------------------- EOF blog ----------------------------*/
 
 /*---------------------------- mentee ----------------------------*/
