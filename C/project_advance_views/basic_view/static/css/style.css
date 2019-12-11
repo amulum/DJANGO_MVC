@@ -1,9 +1,7 @@
 /*---------------------------- font ----------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@font-face{
-    src: url(../fonts/SFCompactDisplay-Semibold) format('truetype'); 
-    font-family: 'SFCompactDisplay';
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Solway:400,500,700|Varela+Round&display=swap');
 }
 
 /*---------------------------- header ----------------------------*/
@@ -170,6 +168,7 @@
     
 }
 
+
 /*---------------------------- EOF author ----------------------------*/
 
 /*---------------------------- blog ----------------------------*/
@@ -242,6 +241,9 @@
     font-size: large;
 }
 
+.mentor-image{
+    width: 100%;
+}
 /*---------------------------- EOF mentor ----------------------------*/
 
 /*---------------------------- Footer ----------------------------*/
@@ -280,3 +282,12 @@
 }
 /*---------------------------- EOF input blog ----------------------------*/
 
+
+/*---------------------------- Font ----------------------------*/
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Solway', serif;
+font-family: 'Varela Round', sans-serif; */
+
+.page-title p{
+    font-family:'Varela Round', sans-serif;
+}
